@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		 <meta name="viewport" content="width=device-width, 
+		 	initial-scale=1.0, minimum-scale=1.0, 
+		 	maximum-scale=1.0, user-scalable=no">
+		 <title>BiBiCAR分享1</title>
+		 <link rel="stylesheet" href="css/index.css" />
+		 <script type="text/javascript" src="js/zepto.js" ></script>
+		 <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--头部 隐藏部分-->
+		<div class="hide">
+			<span>敞篷跑车</span>
+		</div>
+		<header>
+			<div></div>
+		</header>
+		<nav>
+			<div class="nav-font">
+				<div class="info">
+					<span>宝马</span>
+					<span>1系两厢三门版</span>
+				</div>
+				<div class="money">
+					<span>￥</span>
+					<b>21.0</b>
+					<span>万</span>
+				</div>
+			</div>
+		</nav>
+		<div class="car-info">
+			<ul class="car-info-top">
+				<li><a>2500.0</a></li>
+				<li><a>2015</a></li>
+				<li><a>0</a></li>
+				<li><a>1.6</a></li>
+			</ul>
+			<ul class="car-info-footer">
+				<li><a>里程(公里)</a></li>
+				<li><a>首次上牌</a></li>
+				<li><a>过户记录(次)</a></li>
+				<li><a>排量(L)</a></li>
+			</ul>
+		</div>
+	</body>
+	<script>
+			window.onload=function(){
+				setRemSize();
+				window.addEventListener("resize",setRemSize,false);
+				function setRemSize(){		
+				var _clientWidth=document.documentElement.clientWidth/6.4+"px";
+				
+				document.documentElement.style.fontSize=_clientWidth;
+				}
+			}
+	</script>
+</html>
